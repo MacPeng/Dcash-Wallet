@@ -333,5 +333,5 @@ To make this server multithreaded, you're going to need to modify the main `gunr
 - **MySocket** - High level abstraction on top of sockets, used by the framework to read requests and write responses
 
 ## Autograding
-We aren't providing test cases for this project, so an important part of the project is developing your own test cases. We'll try to give descriptive text that explains what an autograded test case tests, but it won't be perfect. Our suggestion is to invest in an extensive test suite that you write yourself to exercise your server.
+We aren't providing test cases for this project, so an important part of the project is developing your own test cases. We'll try to give descriptive text that 
 
