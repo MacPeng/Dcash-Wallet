@@ -331,5 +331,3 @@ To make this server multithreaded, you're going to need to modify the main `gunr
 - **HttpUtils** - Simple utility functions for working with HTTP data
 - **MyServerSocket** - High level abstraction on top of server sockets, accepts connections from new clients
 - **MySocket** - High level abstraction on top of sockets, used by the framework to read requests and write responses
-
-
