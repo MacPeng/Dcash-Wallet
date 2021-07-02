@@ -3,6 +3,7 @@ This web server is a simple server used in ECS 150 for teaching about multi-thre
 
 This server was written by Sam King from UC Davis and is actively maintained by Sam as well. The `http_parse.c` file was written by [Ryan Dahl](https://github.com/ry) and is licensed under the BSD license by Ryan. This programming assignment is from the [OSTEP](http://ostep.org) textbook (tip of the hat to the authors for writing an amazing textbook).
 
+
 # Quickstart
 To compile and run the server, open a terminal and execute the following commands:
 ```bash
@@ -29,7 +30,6 @@ $ curl -v -X POST http://localhost:8080/hello_world.html
 We also included a full website that you can use for testing, try pointing your browser to: `http://localhost:8080/bootstrap.html`
 
 # Overview
-
 In this assignment, you will be developing a concurrent web server. To
 simplify this project, we are providing you with the code for a non-concurrent
 (but working) web server. This basic web server operates with only a single
@@ -47,8 +47,8 @@ Useful reading from [OSTEP](http://ostep.org) includes:
 - [Producer-consumer relationships](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf)
 - [Server concurrency architecture](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-events.pdf)
 
-# HTTP Background
 
+# HTTP Background
 Before describing what you will be implementing in this project, we will
 provide a very brief overview of how a classic web server works, and the HTTP
 protocol (version 1.1) used to communicate with it; although web browsers and
