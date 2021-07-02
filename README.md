@@ -133,7 +133,6 @@ the HTTP protocol or network connections. However, it's always good to learn
 more, isn't it?
 
 # A Basic Web Server
-
 The code for the web server is available in this repository.  You can compile
 the files herein by simply typing `make`. Compile and run this basic web
 server before making any changes to it! `make clean` removes .o files and
