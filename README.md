@@ -100,7 +100,6 @@ server running at a different port number (say 8000), specify the port number
 directly in the URL, e.g., `http://www.cs.wisc.edu:8000/index.html`.
 
 # The HTTP Request
-
 When a client (e.g., a browser) wants to fetch a file from a machine, the
 process starts by sending a machine a message. But what exactly is in the body
 of that message? These *request contents*, and the subsequent *reply
