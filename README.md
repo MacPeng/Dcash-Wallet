@@ -173,7 +173,6 @@ that it can handle new input parameters (e.g., the number of threads to
 create).
 
 ## Part 1: Multi-threaded
- 
 The basic web server that we provided has a single thread of
 control. Single-threaded web servers suffer from a fundamental performance
 problem in that only a single HTTP request can be serviced at a time. Thus,
@@ -230,7 +229,6 @@ implementation performs any busy-waiting (or spin-waiting) instead, you will
 be heavily penalized.
 
 ## Part 2: Scheduling Policies
-
 In this project, you will implement one scheduling
 policy. Note that when your web server has multiple worker threads running
 (the number of which is specified on the command line), you will not have any
@@ -246,7 +244,6 @@ requests will not necessarily finish in FIFO order; the order in which the
 requests complete will depend upon how the OS schedules the active threads.
 
 ## Security
-
 Running a networked server can be dangerous, especially if you are not
 careful. Thus, security is something you should consider carefully when
 creating a web server. One thing you should always make sure to do is not
@@ -299,7 +296,6 @@ To match services to requests, the main `gunrock.cpp` logic tries to find the fi
 From within the service, you set the body of the request, or if there is an error you set the appropriate status code in the response object.
 
 ## Thread functions
-
 We created a pthread replacement library, called `dthread`, that you must
 use for this project. `dthread` logs information about your use of threads,
 mutexes, and condition variables so that we can grade your project.
