@@ -27,6 +27,7 @@ $ curl -v -X POST http://localhost:8080/hello_world.html
 ```
 We also included a full website that you can use for testing, try pointing your browser to: `http://localhost:8080/bootstrap.html`
 
+
 # Overview
 In this assignment, you will be developing a concurrent web server. To
 simplify this project, we are providing you with the code for a non-concurrent
@@ -99,6 +100,7 @@ project), a different port number will be used. To fetch a file from a web
 server running at a different port number (say 8000), specify the port number
 directly in the URL, e.g., `http://www.cs.wisc.edu:8000/index.html`.
 
+
 # The HTTP Request
 When a client (e.g., a browser) wants to fetch a file from a machine, the
 process starts by sending a machine a message. But what exactly is in the body
@@ -131,6 +133,7 @@ unless you want to understand the details of the code we have given you. You
 will not need to modify any of the procedures in the web server that deal with
 the HTTP protocol or network connections. However, it's always good to learn
 more, isn't it?
+
 
 # A Basic Web Server
 The code for the web server is available in this repository.  You can compile
@@ -243,6 +246,7 @@ first request (i.e., the oldest request) in the buffer. Note that the HTTP
 requests will not necessarily finish in FIFO order; the order in which the
 requests complete will depend upon how the OS schedules the active threads.
 
+
 ## Security
 Running a networked server can be dangerous, especially if you are not
 careful. Thus, security is something you should consider carefully when
@@ -258,6 +262,7 @@ One simple (perhaps overly conservative) way to do this is to reject any
 pathname with `..` in it, thus avoiding any traversals up the file system
 tree. More sophisticated solutions could use `chroot()` or Linux containers,
 but perhaps those are beyond the scope of the project.
+
 
 # Gunrock internals
 
@@ -295,6 +300,7 @@ To match services to requests, the main `gunrock.cpp` logic tries to find the fi
 
 From within the service, you set the body of the request, or if there is an error you set the appropriate status code in the response object.
 
+
 ## Thread functions
 We created a pthread replacement library, called `dthread`, that you must
 use for this project. `dthread` logs information about your use of threads,
@@ -309,8 +315,10 @@ routines. To initialize your mutex and condition variables, assign them
 to the `PTHREAD_MUTEX_INITIALIZER` and `PTHREAD_COND_INITIALIZER` macros
 and you'll get initialized mutex and conidition variables.
 
+
 ## Key files
 To make this server multithreaded, you're going to need to modify the main `gunrock.cpp` file and potentially `FileService.cpp`. You'll need to modify these files so that client requests are handled by a pool of threads with some priority logic to handle high priority files first. See the project README for more details.
+
 
 ## Other files
 - **gunrock** - The main function + basic request handling
