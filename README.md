@@ -10,6 +10,7 @@ $ make
 $ ./gunrock_web
 ```
 
+
 To test it out, you can either open up a web browser on the same machine and give it this url `http://localhost:8080/hello_world.html` or if you want to use curl on the command line you can test it out like this:
 ```bash
 $ # get a basic HTML file
